@@ -1,0 +1,202 @@
+.recipe{
+    margin: 0;
+    padding: 50px 0 100px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F6F6F6;
+}
+
+.wrapper{
+    background-color: #fff;
+	border-radius: 2%;
+    width: 80%;
+    margin: 0 0 0 0;
+    padding: 50px;
+    display: grid;
+    justify-content: center;
+    grid-gap: 40px;
+    column-gap: 40px;
+    grid-template-areas: 
+    'four one one'
+    'five two two'
+    'six three three'
+}
+.recipe_main_title{
+    font-family: 'Roboto-Regular';
+    font-size: 30px;
+    font-weight: bold;
+    color:#000000;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.recipe_title{
+    width: 100%;
+    grid-area: one;
+    margin: 0 0 120px 0;
+}
+.recipe_title p{
+    font-family: 'Roboto-Regular';
+    font-size: 30px;
+    font-weight: 600;
+    color: #333339;
+    margin: 0 0 20px 0;
+    line-height: auto;
+}
+.recipe_title div{
+    font-family: 'Roboto-Regular';
+    font-size: 15px;
+    color: #333339;
+}
+
+
+.recipe_ingridiends{
+    width: 100%;
+    grid-area: two;
+    margin: -130px 0 0 0;
+}
+.recipe_title_ingredients{
+    font-family: 'Roboto-Regular';
+    font-size: 20px;
+    text-align: start;
+    margin: 0 0 20px 0;
+    font-weight: 600;
+    color: #333339;
+}
+.recipe_ingridients_main{
+    max-width: 500px;
+}
+.recipe_ingridients_count{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto-Regular';
+    font-size: 15px;
+    color: #333339;
+    margin: 13px 0;
+}
+.recipe_ingridients_line{
+    height: 1px;
+    background-color: #8B8B8B;
+}
+
+
+.recipe_cooking_method{
+    width: 100%;
+    grid-area: three;
+    margin-top: -20px;
+}
+.recipe_text_cook{
+    max-width: 565px;
+    font-family: 'Roboto-Regular';
+    font-size: 17px;
+    color: #333339;
+	line-height: 130%;
+}
+
+
+.recipe_img_salad{
+    max-width: 435px;
+    height: 291px;
+    grid-area: four;
+}
+.recipe_img_salad img{
+    width: 100%;
+    height: auto;
+}
+
+
+.recipe_img_rukkola{
+    justify-self: center;
+
+}.recipe_img_kress{
+    justify-self: center;
+    margin-top: -50px;
+    grid-area: six;
+}
+.recipe_img_rukkola img{
+    max-width: 261px;
+    grid-area: five;
+}
+.recipe_img_rukkola_text{
+    font-family: 'Roboto-Regular';
+    font-size: 17px;
+    color:#333339;
+    margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+    .recipe {
+        padding: 20px 0;
+        justify-content: center;
+    }
+.wrapper{
+    width: 80%;
+    margin: 25px 0;
+    padding: 50px 0;
+    grid-template-rows:50px;
+    grid-template-columns: 0px;
+    grid-template-areas: 
+    'one one one'
+    'four four four'
+    'two two two'
+    'three three three'
+    'five . six'
+}
+.recipe_main_title{
+    font-size: 17px;
+    margin: 0;
+}
+.recipe_title p {
+    font-size: 12px;
+}
+.recipe_title div {
+    font-size: 9px;
+    max-width: 250px;
+}
+.recipe_img_salad{
+    max-width: 254px;
+    max-height: 158px;
+    grid-area: four;
+}
+.recipe_img_salad img{
+margin-top: 25px;
+}
+.recipe_ingridiends{
+    margin: 0 0 0 0;
+}
+.recipe_title_ingredients{
+    font-size: 10px;
+}
+.recipe_ingridients_count{
+    font-size: 8px;
+    margin: 7px 0;
+}
+.recipe_ingridients_main{
+    max-width: 250px;
+}
+.recipe_text_cook{
+    max-width: 250px;
+    font-size: 9px;
+	line-height: 130%;
+}
+.recipe_img_rukkola{
+    justify-self: center;
+    margin-left: 110px;
+}
+.recipe_img_kress{
+    justify-self: center;
+    margin-top: 0;
+}
+.recipe_img_rukkola img{
+    max-width: 110px;
+    grid-area: five;
+}
+.recipe_img_kress img{
+    max-width: 110px;
+}
+.recipe_img_rukkola_text{
+    font-size: 9px;
+    margin-top: 5px;
+}
+}

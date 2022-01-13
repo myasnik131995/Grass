@@ -1,0 +1,77 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+.micro_catalog_container{
+	width: 100%;
+	background-color: #F6F6F6;
+	margin: 0; 
+	padding: 50px 0;	
+}
+.micro_title{
+    font-family: 'Roboto-Regular';
+	width: 100%;
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 50px;
+}
+.info_micro{
+    font-family: 'Roboto-Regular';
+	background-color: #FFFFFF;
+	line-height: 151%;
+	margin: 50px 144px;
+	padding: 87px;
+	border-radius: 2%;
+}
+.main_info_micro{
+	font-size: 17px;
+	margin-bottom: 35px;
+}
+.recipe_component {
+	height: 309px;
+}
+.recipe_component.micro{
+	background-image: url(../img/microCatalogContainer.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+@media (max-width: 1440px) {
+	.recipe_component.micro{
+		margin-bottom: -60px;
+	}
+}
+@media (max-width: 978px) {
+	.recipe_component.micro{
+		margin-bottom: -160px;
+	}
+}
+@media (max-width: 850px) {
+	.micro_catalog_container{
+		margin: 0 0 0 0; 
+		padding: 1px 0 0 0;
+	}
+	.info_micro{
+		margin: 0 30px;
+		padding: 20px;
+		border-radius: 2%;
+		line-height: 100%;
+	}
+	.micro_title{
+		font-size: 17px;
+		margin: 25px 0;
+	}
+	.main_info_micro{
+		font-size: 9px;
+		margin-bottom: 15px;
+	}
+	.recipe_component {
+		height: 95px;
+	}
+	.recipe_component.micro{
+		background-image: url(../img/microCatalogContainerMobile.png);
+		background-repeat: no-repeat;
+		background-size: cover;	
+		margin: 0;
+	}
+}

@@ -1,0 +1,208 @@
+.review_main_container{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: #F6F6F6;
+}
+.review_title{
+    font-family: 'Roboto-Regular';
+    font-size: 30px;
+    font-weight: bold;
+    color:#000000;
+    text-align: center;
+    padding: 50px 0;
+}
+.review_people{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 0 60px 0;
+}
+.review_people_real{
+    width: 348px;
+    height: 423px;
+    background-color: #FFFFFF;
+    border-radius: 3%;
+    border: 2px solid #DDDDDD;
+    margin: auto;
+}
+
+.review_people_real_image{
+    max-width: 302px;
+    height: 202px;
+    margin: 20px 0 0 23px;
+}
+.review_people_real_image.maria{
+    background: url(../img/maria.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.review_people_real_image.irina{
+    background: url(../img/irina.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.review_people_real_image.anna{
+    background: url(../img/anna.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.review_people_real_man{
+    max-width: 100%;
+    height: 43px;
+    display: flex;
+    margin-top: 15px;
+}
+.review_people_real_man_photo{
+    width: 43px;
+    height: 43px;
+    margin-left: 25px;
+} 
+.review_people_real_man_photo.maria {
+    background: url(../img/mariaPhoto.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.review_people_real_man_photo.irina {
+    background: url(../img/irinaPhoto.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.review_people_real_man_photo.anna {
+    background: url(../img/annaPhoto.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.review_people_real_man_name {
+    font-family: 'Roboto-Regular';
+    font-size: 16px;
+    color:#0B132A;
+    align-self: center;
+    font-weight: 600;
+    margin-left: 25px;
+}
+.review_people_real_text{
+    max-width: 297px;
+    margin: 15px 0 0 25px;
+    font-family: 'Roboto-Regular';
+    font-size: 14px;
+    color: #0B132A;
+}
+.review_slider_mobile{
+    display: none;
+    max-width: 80%;
+    position: relative;
+    height: 300px;
+    margin-bottom: 130px;
+    margin: auto;
+}
+.review_buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+}
+.review_button_step{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid #72B043;
+    margin: 0 7px;
+}
+.review_button_step.back{
+    background: url(../img/back.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    cursor: pointer;
+    transition: 1s;
+}
+.review_button_step.next{
+    background: url(../img/next.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    background-color: #72B043;
+    cursor: pointer;
+    transition: 1s;
+}
+.review_slider_mobile .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    padding: 50px 0 0 0;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@media (max-width: 1070px) {
+    .review_people{
+        display: none;
+    }
+    .review_slider_mobile{
+        display: inline;
+    }
+}
+@media (max-width: 768px) {
+    .review_title{
+         padding: 25px 0;
+    }
+    .review_slider_mobile{
+        display: inline;
+    }
+    .review_people_real{
+        width: 232px;
+        height: 282px;
+        background-color: #FFFFFF;
+        border-radius: 3%;
+        border: 2px solid #DDDDDD;
+        margin: auto;
+    }
+    .review_people_real_image{
+        max-width: 170px;
+        height: 130px;
+        margin-left: 31px;
+    }
+    .review_people_real_man{
+        max-width: 100%;
+        height: 33px;
+        display: flex;
+        margin-top: 7px;
+    }
+    .review_people_real_man_photo{
+        width: 43px;
+        height: 43px;
+        margin-left: 25px;
+    } 
+    .review_people_real_man_name {
+        font-size: 10px;
+        margin-left: 25px;
+    }
+    .review_people_real_text{
+        max-width: 100%;
+        font-size: 9px;
+        margin-left: 35px;
+    }
+    .review_people_real_man_photo{
+        width: 33px;
+        height: 33px;
+        margin-left: 35px;
+    } 
+}

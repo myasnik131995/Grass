@@ -1,0 +1,480 @@
+.main_container{
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+.slogan_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 439px;
+    padding: 131px;
+    position: relative;
+    background: url(../img/sloganBackground.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.slogan_background_shadow{
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.slogan_up_text{
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'montserrat700';
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+}
+.slogan_down_text{
+    font-family: 'Roboto-Regular';
+    position: relative;
+    font-weight: 500;
+    color: #fff;
+    font-size: 23px;
+    z-index: 2;
+    margin-top: 50px;
+}
+@media (max-width:648px) {
+    .slogan_container{
+        min-height: 200px;
+        padding: 0;
+    }
+    .slogan_up_text{
+        font-size: 19px;
+    }
+    .slogan_down_text{
+        font-size: 11px;
+        margin-top: 25px;
+    }
+}
+
+.recipe_container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px 0;
+}
+.recipe_component{
+    width: 406px;
+    height: 249px;
+    border-radius: 3%;
+    justify-content: center;
+    box-shadow: 0 0 5px 2px rgb(77, 69, 69);
+}
+.recipe_component.micro{
+    background: url(../img/recipeBackgroundMicro.png);
+    background-position: 50% 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: 1s;
+}
+.recipe_component.straw{
+    background: url(../img/recipeBackgroundStraw.png);
+    background-position: 50% 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: 1s;
+}
+.recipe_component.vitro{
+    background: url(../img/recipeBackgroundVitra.png);
+    background-position: 50% 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: 1s;
+}
+
+.recipe_component.micro:hover{
+    transform: scale(1.05);
+}
+.recipe_component.straw:hover{
+    transform: scale(1.05);
+}
+.recipe_component.vitro:hover{
+    transform: scale(1.05);
+}
+.recipe_component_text{
+    font-family: 'Roboto-Medium';
+    color: #000;
+    font-size: 28px;
+    padding: 25px 40px;
+}
+.recipe_container a{
+    text-decoration: none;
+}
+
+@media (max-width: 1230px) {
+    .recipe_container{
+        flex-direction: column;
+    }
+    .recipe_component{
+        width: 100%;
+        height: 250px;
+        margin: 10px 0;
+    }
+    .recipe_component_text{
+        font-size: 21px;
+    }
+}
+@media (max-width: 750px) {
+    .recipe_container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .recipe_component{
+        width: 300px;
+        height: 100px;
+        margin: 10px 0;
+    }
+    .recipe_component_text{
+        font-size: 14px;
+    }
+    .recipe_component.micro{
+        background-position: 50% 50%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .recipe_component.straw{
+        background-position: 50% 50%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .recipe_component.vitro{
+        background-position: 50% 50%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+.advantage{
+    background: #F2F2F2;
+    padding: 40px 80px;
+
+}
+.advantage_title{
+    font-family: 'montserrat600';
+    text-transform: uppercase;
+    font-size: 35px;
+    color:#333339;
+    margin-left: 60px;
+    margin-bottom: 50px;
+}
+.advantage_title_mobile{
+    font-family: 'montserrat600';
+    text-transform: uppercase;
+    font-size: 35px;
+    color:#333339;
+    margin-left: 60px;
+    margin-bottom: 50px;
+    display: none;
+}
+.advantage_container{
+    max-width: 1920px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.advantage_block{
+    display: flex;
+    justify-content: space-between;
+}
+.advantage_component{
+    background: #fff;
+    border-radius: 20px;
+    width: 271px;
+    height: 324px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+}
+.advantage_component_text{
+    font-family: 'Roboto-Regular';
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+    padding: 0 15px 0 15px;
+    margin-top: 60px;
+}
+@media (max-width: 1320px) {
+    .advantage_title {
+        font-size: 19px;
+        margin-left: 0;
+        margin-bottom: 25px;
+        width: 250px;
+    }
+    .advantage_container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .advantage_block{
+        display: flex;
+    }
+    .advantage_img{
+        width: 50px;
+        height: 50px;
+    }
+    .advantage_component{
+        width: 133px;
+        height: 157px;
+        margin: 10px;
+    }
+    .advantage_component_text{
+        font-size: 12px;
+        margin-top: 20px;
+    }
+}
+@media (max-width: 750px) {
+.advantage_block{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+    
+}
+
+
+.main_line{
+    display:flex;
+    justify-content: center;
+    margin-left: -70px;
+  }
+  .line{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 115px;
+  }
+  .instruction_text{
+    font-family: 'Roboto-Regular';
+    font-size: 19px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    max-width: 212px;
+    margin: 50px 0;
+  }
+  .instruction_component_circle{
+      display: flex;
+      width: 24px;
+      height: 24px;
+      background: #72B043;
+      border-radius: 50%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .instruction_component_delimiter{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 0 0 25px;
+  }
+  .dash{
+      width: 5px;
+      height: 2px;
+      border-radius: 25%;
+      background-color: #93d192;
+      opacity: 0.4;
+      margin-left: 7px;
+  }
+  .instruction{
+      max-height: 596px;
+  }
+  .instruction_main{
+    font-family: 'montserrat600';
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+  }
+
+.instruction_title{
+    font-family: 'montserrat600';
+    text-transform: uppercase;
+    font-size: 35px;
+    color: #333339;
+    margin: 100px 0 100px 150px;
+}
+@media (max-width: 970px) {
+    .main_line{
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+  .line{
+    margin: 0;
+  }
+  .instruction_text{
+    font-size: 14px;
+    margin: 20px 0;
+  }
+    .instruction_component_delimiter{
+        display: none;
+    }
+    .instruction_title{
+        font-size: 19px;
+        margin: 30px 0 30px 0;
+        text-align: center;
+    }
+    
+}
+
+.questions{
+    width: 100%;
+    background: url(../img/questionBackground.png);
+    background-size: cover;
+}
+.questions_container{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.questions_title{
+    color: #333339;
+    font-family: 'montserrat600';
+    font-size: 35px;
+    text-transform: uppercase;
+    max-width: 280px;
+    margin-left: 190px;
+    margin-top: 75px;
+}
+.questions_text{
+    color: #000000;
+    font-family: 'Roboto-Regular';
+    font-weight: 400;
+    font-size: 22.36px;
+    width: 100%;
+    margin-left: 195px;
+    margin-bottom: 70px;
+}
+.questions_input_container{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border-radius: 33px;
+    margin:  0 0 50px 100px;
+    padding: 30px 0 50px 0;
+}
+.questions_input {
+    width: 75%; 
+    border: 1px solid #A0A0A0;
+    font-family: 'Roboto-Regular';
+    font-size: 14px;
+    padding: 20px 0 16px 20px;
+    border-radius: 24px;
+    outline: none;
+    margin: 25px 0 0 0;
+}
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+.questions_button {
+    background: #72B043;
+    border-radius: 24px;
+    text-align: center;
+    font-family: 'Roboto-Regular';
+    color: #fff;
+    cursor: pointer;
+    padding: 20px 0;
+    font-size: 14px;
+    width: 75%;
+    margin: 30px 0 0 0;
+	transition: text-shadow .3s;
+}
+.questions_button:hover{
+	text-shadow: 0 0 .75px #fff, 0 0 .75px #fff, 0 0 .75px #fff;
+}
+@media (max-width: 768px) {
+    .questions{
+        background-position: 50% 50%;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .questions{
+        background: url(../img/questionBackground.png);
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+    .questions_container{
+        width: 280px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+        padding: 30px;
+    }
+    .questions_title{
+        color: #333339;
+        font-family: 'montserrat600';
+        font-size: 19px;
+        text-transform: uppercase;
+        margin: 30px auto;
+    }
+    .questions_text{
+        color: #000000;
+        font-family: 'montserrat600';
+        font-size: 13px;
+        margin: auto 0 20px 0;
+        text-align: center;
+    }
+    .questions_input_container{
+        width: 280px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background: #fff;
+        border-radius: 33px;
+        margin:  0;
+        padding: 20px 10px 45px 10px;
+    }
+    .questions_input {
+        width: 90%;
+        border: 1px solid #A0A0A0;
+        font-family: 'Roboto-Regular';
+        font-size: 12px;
+        border-radius: 24px;
+        outline: none;
+    }
+    .questions_button {
+        background: #72B043;
+        border-radius: 24px;
+        text-align: center;
+        font-family: 'Roboto-Regular';
+        color: #fff;
+        cursor: pointer;
+        padding: 17px 0 17px 0;
+        font-size: 12px;
+        width: 90%;
+        margin: 30px 0 0 0;
+    }
+    @media (max-width: 375px) {
+        .questions_input_container{
+            width: 250px;
+        }
+
+    }
+}
+

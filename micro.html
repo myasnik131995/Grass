@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>О микрозелени</title>
+
+  <link href="css/micro.css" rel="stylesheet">
+  <link href="css/font.css" rel="stylesheet">
+  <link href="css/header_menu.css" rel="stylesheet">
+  <link href="css/footer.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="header_main">
+    <a href="./index.html">
+      <div class="header_logo">
+        <img src="../img/logo_green_big.png" alt="логотип">
+      </div>
+    </a>
+    <div class="menu_container">
+      <div class="menu">
+
+        <a class="menu_component " href="./index.html">Главная</a>
+        <a class="menu_component" href="./catalogue.html">Каталог</a>
+        <a class="menu_component" href="./micro.html">О микрозелени</a>
+        <a class="menu_component" href="./recipe.html">Рецепты</a>
+        <a class="menu_component" href="./review.html">Отзывы</a>
+        <a class="menu_component" href="./contacts.html">Контакты</a>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="header_mobile">
+    <div class="burger-menu">
+      <a href="#" class="burger-menu_button">
+        <div>
+          <spun class="burger-menu_lines"></spun>
+        </div>
+      </a>
+      <nav class="burger-menu_nav">
+        <a href="./index.html" class="burger-menu_link">Главная</a>
+        <a href="./catalogue.html" class="burger-menu_link">Каталог</a>
+        <a href="./micro.html" class="burger-menu_link">О микрозелени</a>
+        <a href="./recipe.html" class="burger-menu_link">Рецепты</a>
+        <a href="./review.html" class="burger-menu_link">Отзывы</a>
+        <a href="./contacts.html" class="burger-menu_link">Контакты</a>
+
+        <div class="contacts_social_network">
+          <a class="contacts_social_link" href="#">
+            <div class="contacts_social_link_vk">
+            </div>
+          </a>
+          <a class="contacts_social_link" href="#">
+            <div class="contacts_social_link_inst">
+            </div>
+          </a>
+        </div>
+
+      </nav>
+      <div class="burger-menu_overlay"></div>
+
+
+    </div>
+
+    <a href="./index.html">
+      <div class="header_logo_mobile">
+        <img src="../img/logo_green.png" alt="логотип">
+      </div>
+    </a>
+    <div class="basket_mobile_href">
+      <a href="#">
+        <div class="basket_mobile">
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <script src="../js/jquery-3.1.0.min.js"></script>
+  <script>
+    function burgerMenu(selector) {
+      let menu = $(selector);
+      let button = menu.find('.burger-menu_button', '.burger-menu_lines');
+      let links = menu.find('.burger-menu_link');
+      let overlay = menu.find('.burger-menu_overlay');
+
+      button.on('click', (e) => {
+        e.preventDefault();
+        toggleMenu();
+      });
+
+      links.on('click', () => toggleMenu());
+      overlay.on('click', () => toggleMenu());
+
+      function toggleMenu() {
+        menu.toggleClass('burger-menu_active');
+
+        if (menu.hasClass('burger-menu_active')) {
+          $('body').css('overlow', 'hidden');
+        } else {
+          $('body').css('overlow', 'visible');
+        }
+      }
+    }
+    burgerMenu('.burger-menu');
+  </script>
+
+  <div class="micro_catalog_container">
+    <h1 class="micro_title">О микрозелени</h1>
+
+    <div class="info_micro">
+
+      <div class="main_info_micro">
+        <b>Микрозелень</b> — молодые побеги растений, которые используются
+        как в пищу, так и для украшения блюд. Её используют в салатах,
+        супах, коктейлях, смузи, других напитках и блюдах.
+        Из-за высокого содержания полезных веществ такая пища считается
+        очень перспективной, а её потребление неуклонно растёт.
+      </div>
+      <div class="recipe_component micro">
+
+      </div>
+      <div class="main_info_micro">
+        <b>По сравнению со своими взрослыми «родственниками»,
+          микрозелень по содержанию многих важных веществ опережает их в разы,
+          а то и в десятки раз.</b>
+      </div>
+      <div class="main_info_micro">
+        Согласно многочисленным научным исследованиям, в молодых проростках оказалось
+        <b>удивительно много растительного белка, хлорофилла, витаминов
+          (особенно С, В, К, Е), пигментов-каротиноидов,
+          минеральных соединений (калия, кальция, фосфора, магния, железа,
+          йода, серы), эфирных масел.</b>
+      </div>
+      <div class="main_info_micro">
+        <b>Каждое из этих веществ так или иначе помогает нашему организму.</b>
+        Так, фолиевая кислота необходима для процессов кроветворения
+        и просто незаменима в питании женщин репродуктивного возраста.
+        Токоферол и аскорбиновая кислота — прекрасные антиоксиданты.
+        Каротиноиды тормозят избыточное деление клеток и обладают
+        иммуностимулирующими свойствами. Рутин помогает предотвратить
+        образование тромбов, уменьшает проницаемость капилляров и 
+        обладает противовоспалительной активностью. Сульфорафан обладает
+        противораковым и антибактериальным эффектами.
+      </div>
+      <div class="main_info_micro">
+        О пользе многочисленных минеральных соединений даже упоминать
+        бессмысленно — она очевидна, ведь минералы принимают активнейшее
+        участие во всех процессах человеческого организма. Употребление
+        микрозелени с таким богатым составом <b>благоприятно сказывается
+          на функционировании не только пищеварительной, но также
+          сердечно-сосудистой, кроветворной, нервной, иммунной, выделительной,
+          репродуктивной, эндокринной систем.</b>
+      </div>
+      <div class="main_info_micro">
+        <b>А хлорофилл и вовсе в последнее время активно изучается в 
+          качестве исключительно действенного противоопухолевого (антиракового)
+          агента.</b>И это уже не говоря о его давно доказанных свойствах
+        как антиоксиданта, как соединения, улучшающего транспортировку
+        кислорода к клеткам и тканям человеческого тела, повышающего иммунитет,
+        помогающего связывать и выводить токсины, тормозящего рост патогенной
+        микрофлоры, уменьшающего болевые ощущения.
+      </div>
+      <div class="main_info_micro">
+        Помните также, что <b>каждый вид микрозелени ценен своим собственным
+          набором полезных веществ.</b>
+        Так, миниатюрный кресс-салат весьма полезен для зрения,
+        базилик улучшает пищеварение, брокколи и пшеница помогают
+        выводить токсины из организма, ростки гречки укрепляют капилляры
+        и помогают кроветворению, овес полезен для иммунитета и нервной системы,
+        люцерна и подсолнечник содержат рекордное количество растительного белка,
+        микрозелень редиса улучшает состояние кожи и волос…
+      </div>
+    </div>
+    <h1 class="micro_title">В кулинарии</h1>
+    <div class="info_micro">
+
+      <div class="main_info_micro">
+        <b>В кулинарии использование микрозелени практически
+          безгранично — ее добавляют в любые бутерброды, салаты,
+          супы, зеленые коктейли, смузи, в другие напитки и блюда
+          как начинку или даже в качестве украшения.</b>
+      </div>
+      <div class="main_info_micro">
+        Разумеется, употреблять в пищу микрозелень полезнее всего свежей,
+        сразу после срезки. Однако, вы вполне можете 3-4 дня хранить ее 
+        в холодильнике в пластиковом контейнере.
+        А вот <b>подвергать микрозелень термической обработке
+          (особенно длительной) не стоит — подавляющее большинство
+          полезных веществ попросту разрушится.</b>
+      </div>
+      <div class="main_info_micro">
+        <b>Для получения микрозелени наиболее часто высаживаются
+          следующие растения:</b>
+      </div>
+      <div class="main_info_micro">
+        <b>Кресс-салат</b><br>
+        Характеризуется значительным содержанием белков и
+         минералов, необходимых для здорового питания,
+        а также контроля веса.
+      </div>
+      <div class="main_info_micro">
+        <b>Люцерна</b><br>
+        Имеет в своем составе богатый набор микроэлементов,
+        самые ценные из которых — фосфор,
+        соединения калия, железо и антиоксиданты.
+      </div>
+      <div class="main_info_micro">
+        <b>Кориандр</b><br>
+        Его микрозелень богата на витамины,
+        минералы, незаменимые кислоты и дубильные вещества.
+        Обогащает питание эфирными маслами.
+      </div>
+      <div class="main_info_micro">
+        <b>Базилик</b><br>
+        Имеет оптимальный состав для ЗОЖ и поддержания
+        баланса веса — эфирные масла, сахара.
+      </div>
+      <div class="main_info_micro">
+        <b>Брокколи</b><br>
+        Ростки, благодаря наличию сульфорана, оперативно
+        освобождают организм от продуктов распада.
+        Также они помогают наладить активный обмен веществ.
+      </div>
+      <div class="main_info_micro">
+        <b>Редис</b><br>
+        Выделяется высокой концентрацией аскорбиновой
+        кислоты и способствует улучшению обменных и 
+        регенеративных процессов, а значит и поддержанию красивой фигуры.
+      </div>
+      <div class="main_info_micro">
+        <b>Свекла</b><br>
+        Эта зелень повторяет и усиливает полезные
+        свойства самого корнеплода — улучшает пищеварение
+        и тонизирует выделительную систему организма.
+      </div>
+      <div class="main_info_micro">
+        <b>Пшеница</b><br>
+        Помогает повысить энергию, вывести из организма
+        продукты распада и ускорить обменные реакции,
+        что не будет лишним при борьбе с избыточными
+        жировыми отложениями.
+      </div>
+      <div class="main_info_micro">
+        <b>Овес</b><br>
+        Его ростки богаты кальцием, магнием, соединениями железа.
+        Они способствуют улучшению работы нейронов,
+        повышают уровень природного иммунитета.
+      </div>
+      <div class="main_info_micro">
+        <b>Подсолнечник</b><br>
+        Его микрозелень содержит белки, витамины, незаменимые аминокислоты,
+        значительное количество антиоксидантов. Он способен минимизировать
+        потери мышечных волокон при нахождении организма в процессе похудения.
+      </div>
+      <div class="main_info_micro">
+        <b>Гречка</b><br>
+        Пророщенные зерна гречки особенно рекомендованы для людей
+        с большим избыточным весом и сахарным диабетом.
+        Они благотворно влияют на процесс кроветворения и,
+        благодаря фолиевой кислоте и рутину,
+        укрепляют стенки больших и малых кровеносных сосудов.
+      </div>
+      <div class="main_info_micro">
+        <b>Дижонская горчица</b><br>
+        Содержит витамины групп С и Е,
+        чем повышает сопротивляемость организма
+        вирусам и бактериям.
+      </div>
+      <div class="main_info_micro">
+        <b>Чечевица</b><br>
+        Добавление этих ростков в питание эффективно для
+        поддержания биохимии крови в идеальном состоянии.
+      </div>
+
+
+
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer_title">ГРИН ФЕРМА</div>
+    <div class="footer_menu">
+      <a class="footer_component " href="./index.html">Главная</a>
+      <a class="footer_component" href="./catalogue.html">Каталог</a>
+      <a class="footer_component" href="./micro.html">О микрозелени</a>
+      <a class="footer_component" href="./recipe.html">Рецепты</a>
+      <a class="footer_component" href="./review.html">Отзывы</a>
+      <a class="footer_component" href="./contacts.html">Контакты</a>
+    </div>
+    <div class="footer_delimiter"></div>
+    <div class="footer_social_network">
+      <a class="footer_social_link" href="#">
+        <div class="footer_social_link_network inst">
+        </div>
+      </a>
+      <a class="footer_social_link" href="#">
+        <div class="footer_social_link_network vk">
+        </div>
+      </a>
+    </div>
+  </div>
+
+</body>
+
+</html>

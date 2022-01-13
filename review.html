@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Отзывы</title>
+
+  <link href="css/review.css" rel="stylesheet">
+  <link href="css/font.css" rel="stylesheet">
+  <link href="css/header_menu.css" rel="stylesheet">
+  <link href="css/footer.css" rel="stylesheet">
+
+</head>
+
+<body>
+   
+  <div class="header_main">
+    <a href="./index.html">
+      <div class="header_logo">
+        <img src="../img/logo_green_big.png" alt="логотип">
+      </div>
+    </a>
+    <div class="menu_container">
+      <div class="menu">
+
+        <a class="menu_component " href="./index.html">Главная</a>
+        <a class="menu_component" href="./catalogue.html">Каталог</a>
+        <a class="menu_component" href="./micro.html">О микрозелени</a>
+        <a class="menu_component" href="./recipe.html">Рецепты</a>
+        <a class="menu_component" href="./review.html">Отзывы</a>
+        <a class="menu_component" href="./contacts.html">Контакты</a>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="header_mobile">
+    <div class="burger-menu">
+      <a href="#" class="burger-menu_button">
+        <div>
+          <spun class="burger-menu_lines"></spun>
+        </div>
+      </a>
+      <nav class="burger-menu_nav">
+        <a href="./index.html" class="burger-menu_link">Главная</a>
+        <a href="./catalogue.html" class="burger-menu_link">Каталог</a>
+        <a href="./micro.html" class="burger-menu_link">О микрозелени</a>
+        <a href="./recipe.html" class="burger-menu_link">Рецепты</a>
+        <a href="./review.html" class="burger-menu_link">Отзывы</a>
+        <a href="./contacts.html" class="burger-menu_link">Контакты</a>
+
+        <div class="contacts_social_network">
+          <a class="contacts_social_link" href="#">
+            <div class="contacts_social_link_vk">
+            </div>
+          </a>
+          <a class="contacts_social_link" href="#">
+            <div class="contacts_social_link_inst">
+            </div>
+          </a>
+        </div>
+
+      </nav>
+      <div class="burger-menu_overlay"></div>
+
+
+    </div>
+
+    <a href="./index.html">
+      <div class="header_logo_mobile">
+        <img src="../img/logo_green.png" alt="логотип">
+      </div>
+    </a>
+    <div class="basket_mobile_href">
+      <a href="#">
+        <div class="basket_mobile">
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <script src="../js/jquery-3.1.0.min.js"></script>
+  <script>
+    function burgerMenu(selector) {
+      let menu = $(selector);
+      let button = menu.find('.burger-menu_button', '.burger-menu_lines');
+      let links = menu.find('.burger-menu_link');
+      let overlay = menu.find('.burger-menu_overlay');
+
+      button.on('click', (e) => {
+        e.preventDefault();
+        toggleMenu();
+      });
+
+      links.on('click', () => toggleMenu());
+      overlay.on('click', () => toggleMenu());
+
+      function toggleMenu() {
+        menu.toggleClass('burger-menu_active');
+
+        if (menu.hasClass('burger-menu_active')) {
+          $('body').css('overlow', 'hidden');
+        } else {
+          $('body').css('overlow', 'visible');
+        }
+      }
+    }
+    burgerMenu('.burger-menu');
+  </script>
+
+  <div class="review_main_container">
+
+    <div class="review_title">Отзывы</div>
+
+    <div class="review_people">
+
+      <div class="review_people_real maria">
+        <div class="review_people_real_image maria"></div>
+        <div class="review_people_real_man">
+          <div class="review_people_real_man_photo maria"></div>
+          <div class="review_people_real_man_name">Мария Иванова</div>
+        </div>
+        <div class="review_people_real_text">
+          Идейные соображения высшего порядка,
+          а также сплочённость команды профессионалов
+          требует анализа своевременного выполнения
+          сверхзадачи.</div>
+      </div>
+
+      <div class="review_people_real irina">
+        <div class="review_people_real_image irina"></div>
+        <div class="review_people_real_man">
+          <div class="review_people_real_man_photo irina"></div>
+          <div class="review_people_real_man_name">Ирина Котова</div>
+        </div>
+        <div class="review_people_real_text">
+          Внезапно, явные признаки победы институционализации
+          неоднозначны и будут своевременно верифицированы.</div>
+      </div>
+
+      <div class="review_people_real anna">
+        <div class="review_people_real_image anna"></div>
+        <div class="review_people_real_man">
+          <div class="review_people_real_man_photo anna"></div>
+          <div class="review_people_real_man_name">Анна Стахова</div>
+        </div>
+        <div class="review_people_real_text">
+          Задача организации, в особенности же базовый
+          вектор развития говорит о возможностях глубокомысленных
+          рассуждений.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="review_slider_mobile">
+    <div class="item">
+      <div class="review_people_real maria">
+        <div class="review_people_real_image maria"></div>
+        <div class="review_people_real_man">
+          <div class="review_people_real_man_photo maria"></div>
+          <div class="review_people_real_man_name">Мария Иванова</div>
+        </div>
+        <div class="review_people_real_text">
+          Идейные соображения высшего порядка,
+          а также сплочённость команды профессионалов
+          требует анализа своевременного выполнения
+          сверхзадачи.</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="review_people_real irina">
+        <div class="review_people_real_image irina"></div>
+        <div class="review_people_real_man">
+          <div class="review_people_real_man_photo irina"></div>
+          <div class="review_people_real_man_name">Ирина Котова</div>
+        </div>
+        <div class="review_people_real_text">
+          Внезапно, явные признаки победы институционализации
+          неоднозначны и будут своевременно верифицированы.</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="review_people_real anna">
+        <div class="review_people_real_image anna"></div>
+        <div class="review_people_real_man">
+          <div class="review_people_real_man_photo anna"></div>
+          <div class="review_people_real_man_name">Анна Стахова</div>
+        </div>
+        <div class="review_people_real_text">
+          Задача организации, в особенности же базовый
+          вектор развития говорит о возможностях глубокомысленных
+          рассуждений.</div>
+      </div>
+    </div>
+
+    <div class="review_buttons">
+      <a class="review_button_step back" onclick="minusSlide()"></a> </a>
+      <a class="review_button_step next" onclick="plusSlide()"></a>
+    </div>
+  </div>
+
+
+
+  <div class="footer">
+    <div class="footer_title">ГРИН ФЕРМА</div>
+    <div class="footer_menu">
+      <a class="footer_component " href="./index.html">Главная</a>
+      <a class="footer_component" href="./catalogue.html">Каталог</a>
+      <a class="footer_component" href="./micro.html">О микрозелени</a>
+      <a class="footer_component" href="./recipe.html">Рецепты</a>
+      <a class="footer_component" href="./review.html">Отзывы</a>
+      <a class="footer_component" href="./contacts.html">Контакты</a>
+    </div>
+    <div class="footer_delimiter"></div>
+    <div class="footer_social_network">
+      <a class="footer_social_link" href="#">
+        <div class="footer_social_link_network inst">
+        </div>
+      </a>
+      <a class="footer_social_link" href="#">
+        <div class="footer_social_link_network vk">
+        </div>
+      </a>
+    </div>
+  </div>
+  <script>
+    /* Индекс слайда по умолчанию */
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    /* Функция увеличивает индекс на 1, показывает следующй слайд*/
+    function plusSlide() {
+      showSlides(slideIndex += 1);
+    }
+    if (window.screen.width < 650) {
+      plusSlide();
+      console.log('выполнять');
+    }
+    /* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
+    function minusSlide() {
+      showSlides(slideIndex -= 1);
+    }
+    /* Устанавливает текущий слайд */
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    /* Основная функция сладера */
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("item");
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex - 1].style.display = "block";
+    }
+  </script>
+</body>
+
+</html>
